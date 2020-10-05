@@ -110,6 +110,7 @@ nav {
 .arrow-down {
   width: 3.5vw;
   fill: #FFFFFF;
+  transform: translate(3vw,-3vw);
 }
 
 .title {
@@ -169,6 +170,7 @@ nav {
 }
 
 .surround {
+  display: none;
   position: absolute;
   fill: none;
   stroke: #EC7442;
@@ -280,13 +282,6 @@ h1 > div {
   text-align: center;
 }
 
-noname {
-  position: relative;
-  height: 2.6vw;
-  overflow: hidden;
-  text-align: center;
-}
-
 .hidden {
   position: absolute;
   opacity: 0;
@@ -298,6 +293,26 @@ noname {
   text-align: center;
 }
 
-.fadeInUp {
+.hidden2 {
+  position: absolute;
   opacity: 0;
+  transform: translateY(50px);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeInUp{
+  opacity: 0;
+  transform: translateX(-10vw);
+}
+
+.scale-grow{
+  transform: scaleX(2);
 }

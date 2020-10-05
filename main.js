@@ -701,29 +701,3 @@
     delete e.default
   }
 });
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".hidden", {
-  delay: 0.2,
-  duration: 0.9,
-  ease: "expo.out",
-  opacity: 1,
-  y: 0,
-  stagger: 0.1,
-});
-gsap.to(".fadeInUp", {
-  delay: 0.4,
-  duration: 0.9,
-  ease: "expo.out",
-  opacity: 1,
-  y: 4,
-  stagger: 0.1
-});
-
-gsap.to(".scroll", {
-  x: -600,
-  y: 600,
-  ease: "none",
-
-});
