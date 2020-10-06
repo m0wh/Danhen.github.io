@@ -63,18 +63,26 @@ li {
 
 a:link {
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 a:visited {
-
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 a:active {
-
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 button {
@@ -221,6 +229,16 @@ nav {
   width: 70%;
 }
 
+  .social-link > li > a:link > h3{
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .social-link > li > a:hover > h3{
+    opacity: 1;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
 
 /* NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV */
 
