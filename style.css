@@ -139,8 +139,13 @@ nav {
   margin-top: 24vw;
   margin-right: 65px;
   margin-left: 55px;
+  transition: opacity 0.2s ease-in-out;
 }
 
+.project-container:hover{
+  opacity: 0.2;
+  transition: opacity 0.2s ease-in-out;
+}
 .project {
   display: flex;
   flex-direction: row;
