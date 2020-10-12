@@ -52,7 +52,7 @@
   h3 {
     font-size: 0.6vw;
     font-weight: 100;
-    line-height: 5px;
+    line-height: 0.4vw;
   }
 
   li {
@@ -147,21 +147,8 @@
     margin-top: 24vw;
     margin-right: 65px;
     margin-left: 55px;
-    opacity: 1;
     z-index: 20;
-    transition: opacity 0.5s ease-in-out;
   }
-
-  .project-container:hover .project{
-    opacity: 0.2;
-    transition: opacity 0.2s ease-in-out;
-  }
-
-  .project-container:hover .project:hover {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-  }
-
 
   .project {
     display: flex;
