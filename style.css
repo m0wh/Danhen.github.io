@@ -150,14 +150,34 @@
     z-index: 20;
   }
 
+  .project-container a{
+    opacity:1!important;
+    transition: opacity 100ms ease-in-out;
+  }
+
   .project {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
     z-index: 20;
+  }
+
+  .project-container a{
+    color: #FFFFFF;
+    transition: color  600ms ease-in-out;
+  }
+
+  .project-container a.hover-in{
+    color: #FFFFFF;
+    transition: color 600ms ease-in-out;
+  }
+
+  .project-container a.hover-off{
+    color: #404040;
+    transition: color  600ms ease-in-out;
   }
 
   .project-info {
