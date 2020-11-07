@@ -199,14 +199,14 @@
   }
 
   .surround {
-    display: none;
+
     position: absolute;
     fill: none;
     stroke: #EC7442;
     stroke-miterlimit: 10;
     stroke-width: 2px;
-    margin-left: -21px;
-    margin-top: -10px;
+    margin-left: -45px;
+    margin-top: -22px;
     width: 12vw;
 
   }
