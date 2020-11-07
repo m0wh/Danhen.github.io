@@ -17,9 +17,10 @@
     <div class="landpage-container">
       <nav>
         <h3 class="logo">Léo clot</h3>
-          <h3>
-            <div><span class="fadeIn">MENU</span></div>
-          </h3>
+        <button id="nav-toggle">
+          <span></span>
+        </button>
+
       </nav>
 
       <div class="title">
@@ -62,9 +63,6 @@
 
 
     <div class="project-container">
-      <div class="sequence-container">
-        <img class="sequence" style="width: 100%" src="img/0001.png"/>
-      </div>
       <ul>
         <li>
           <a href="#" class="hover-section" id="0-2">
@@ -311,11 +309,12 @@
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.to(".hidden", { delay: 0.2, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1, });
-      gsap.to(".fadeIn", { delay: 0.7, duration: 0.9, ease: "expo.out", opacity: 1, });
+      gsap.to(".fadeIn", { delay: 0.8, duration: 0.9, ease: "expo.out", opacity: 1, });
       gsap.to(".arrow-down",{ delay:1.2, duration: 0.9, ease: "expo.out", x:-0, y:0, });
-      gsap.to(".fadeInUp", { delay: 0.6, duration: 0.8, ease: "power4.out", y: 0, opacity: 1, stagger: 0.05, scrollTrigger: ".fadeInUp",});
-      gsap.to(".hidden2", { delay: 0.5, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1, scrollTrigger: ".hidden2"});
-
+      gsap.to(".fadeInUp", { delay: 0.6, duration: 0.8, ease: "power4.out", y: 0, opacity: 1, stagger: 0.05,
+        scrollTrigger: ".fadeInUp",});
+      gsap.to(".hidden2", { delay: 0.5, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1,
+        scrollTrigger: ".hidden2"});
     </script>
   </body>
 </html>

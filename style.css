@@ -144,7 +144,6 @@
   }
 
   .project-container {
-    position: relative;
     margin-top: 24vw;
     margin-right: 65px;
     margin-left: 55px;
@@ -185,12 +184,10 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
-    z-index: 20;
   }
 
   .project-title {
     position: relative;
-    z-index: 20;
   }
 
   .cutline {
@@ -198,7 +195,7 @@
     height: 1px;
     background-color: #FFFFFF;
     opacity: 0.2;
-    z-index: 0;
+    z-index: -20;
   }
 
   .surround {
@@ -259,10 +256,60 @@
     transition: opacity 0.2s ease-in-out;
   }
 
-  .sequence-container{
+/* NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV */
+
+  #nav-toggle {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    position: relative;
+  }
+
+  #nav-toggle span {
+    margin-top: -4px;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    width: 44px;
+    background: white;
     position: absolute;
-    width: 100%;
-    z-index: 5;
+    display: block;
+    content: '';
+  }
+
+  #nav-toggle span:before {
+    top: 4px;
+    height: 2px;
+  }
+
+  #nav-toggle span:after {
+    bottom: 4px;
+    height: 2px;
+  }
+
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+  }
+
+  #nav-toggle.active span:before {
+    transform: rotate(10.5deg);
+  }
+
+  #nav-toggle.active span:after {
+    transform: rotate(-10.5deg);
   }
 
 /* ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION - ANIMATION */
@@ -277,7 +324,7 @@
   .hidden {
     position: absolute;
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(50px);
     margin-left: auto;
     margin-right: auto;
     left: 0;
