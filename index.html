@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
   </head>
   <body>
 
@@ -101,7 +102,7 @@
           <div class="cutline"></div>
 
             <li>
-              <a href="#" class="hover-section" id="1-2">
+              <a href="unnamed.html" class="hover-section" id="1-2">
                 <div class="project">
                   <h2>
                     <div class="project-title">
@@ -318,6 +319,11 @@
         scrollTrigger: ".fadeInUp",});
       gsap.to(".hidden2", { delay: 0.5, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1,
         scrollTrigger: ".hidden2"});
+    </script>
+    <script>
+      barba.init({
+        // ...
+      })
     </script>
   </body>
 </html>

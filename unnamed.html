@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ng">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="author" content="Dan Hen" />
+    <meta name="description" content="width=device-width, initial-scale=1" />
+
+    <!-- Placer le logo favicon-md.ico ici -->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+  </head>
+  <body>
+
+    <div class="landpage-container">
+      <nav>
+        <h3 class="logo">Léo clot</h3>
+        <button id="nav-toggle">
+          <span></span>
+        </button>
+
+      </nav>
+
+      <div class="title">
+        <h1 data-scroll-section>
+          <div><span data-scroll data-scroll-speed="1" class="hidden">
+            Unnamed is
+            <svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.39 55.81">
+              <rect x="43" y="16.3" width="4" height="57.39" transform="translate(-28.03 -0.94) rotate(-18.05)"/>
+              <rect x="43" y="16.3" width="4" height="57.39" transform="translate(-34.28 37.09) rotate(-53.3)" />
+              <rect y="25.9" width="57.39" height="4" />
+              <rect x="16.3" y="43"width="57.39" height="4" transform="translate(-34.27 18.68) rotate(-36.66)"/>
+              <rect x="16.3" y="43" width="57.39" height="4" transform="translate(-28.04 56.73) rotate(-71.94)" />
+            </svg>
+            a sci-fi short inspired </span></div>
+          <div>
+            <span data-scroll data-scroll-speed="2" class="hidden">
+              by infamous mk-ultra experience.
+            </span>
+          </div>
+        </h1>
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="locomotive-scroll.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      document.querySelector("#nav-toggle").addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+
+      function resetEtat(oEvent){
+        var aBtns = document.getElementsByClassName("hover-section");
+        for(var i = 0; i< aBtns.length; i++){
+          aBtns[i].classList.remove('hover-off');
+          aBtns[i].classList.remove('hover-in');
+        }//for
+      }//fct
+      function setEtat(oEvent){
+        var oBt = oEvent.currentTarget,
+                aBtns = document.getElementsByClassName("hover-section");
+        oBt.classList.add('hover-in');
+        for(var i = 0; i < aBtns.length; i++){
+          if(aBtns[i] != oBt){
+            aBtns[i].classList.add('hover-off');
+          }//if
+        }//for
+      }//fct
+
+      document.addEventListener('DOMContentLoaded',function(){
+        var aBtns = document.getElementsByClassName("hover-section");
+        for(var i = 0; i < aBtns.length; i++){
+          aBtns[i].addEventListener('mouseenter',setEtat);
+          aBtns[i].addEventListener('mouseleave',resetEtat);
+        }//for
+      });
+
+    </script>
+    <script>
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(".hidden", { delay: 0.2, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1, });
+      gsap.to(".fadeIn", { delay: 0.8, duration: 0.9, ease: "expo.out", opacity: 1, });
+      gsap.to(".arrow-down",{ delay:1.2, duration: 0.9, ease: "expo.out", x:-0, y:0, });
+      gsap.to(".fadeInUp", { delay: 0.6, duration: 0.8, ease: "power4.out", y: 0, opacity: 1, stagger: 0.05,
+        scrollTrigger: ".fadeInUp",});
+      gsap.to(".hidden2", { delay: 0.5, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1,
+        scrollTrigger: ".hidden2"});
+    </script>
+    <script>
+      barba.init({
+        // ...
+      })
+    </script>
+  </body>
+</html>

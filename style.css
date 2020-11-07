@@ -203,6 +203,7 @@
   }
 
   .surround {
+    display: none;
     position: absolute;
     fill: none;
     stroke: #EC7442;
