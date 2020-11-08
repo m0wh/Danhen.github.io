@@ -170,7 +170,7 @@
   }
 
   .project-container a.hover-in{
-    color: #FFFFFF;
+    color: white;
     transition: color 600ms ease-in-out;
   }
 
@@ -369,4 +369,16 @@
 
   .scale-grow{
     transform: scaleX(2);
+  }
+
+  .hide{
+    display: none;
+    transition: opacity  600ms ease-in-out;
+    opacity: 0;
+  }
+
+  .show{
+    display: block;
+    transition: opacity  600ms ease-in-out;
+    opacity: 1;
   }
