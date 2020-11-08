@@ -9,7 +9,7 @@
 
     <!-- Placer le logo favicon-md.ico ici -->
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="project.css" />
     <script type="text/javascript" src="script.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
   </head>
@@ -45,6 +45,100 @@
       </div>
     </div>
 
+    <div class="project-info">
+      <h2 class="date">
+        <div>
+          <span class="fadeIn">
+            Late 2020
+          </span>
+        </div>
+      </h2>
+
+      <div class="labels">
+        <h2 class="categories">
+          <div>
+            <span class="fadeIn">
+              Music<br>conposition<br>interactive<br>experience
+            </span>
+          </div>
+        </h2>
+        <h2 class="software">
+          <div>
+            <span class="fadeIn">
+              Blender<br>After effect
+            </span>
+          </div>
+        </h2>
+        <h2 class="link">
+          <div>
+            <span class="fadeIn">
+              <a href="">github</a>
+            </span>
+          </div>
+        </h2>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="row-full">
+        <img class="back" src="img/unnamed.png" width="100%">
+      </div>
+
+      <div class="row-right">
+        <img class="back" src="img/unnamed.png" width="100%">
+      </div>
+
+      <h1 class="text-right">
+        <div>
+            <span class="hidden2">
+              lorem ipsum dolor sit amet
+              lorem ipsum dolor sit amet
+              lorem ipsum dolor sit amet
+            </span>
+        </div>
+      </h1>
+
+      <h1 class="text-left">
+        <div>
+            <span class="hidden2">
+              lorem ipsum dolor sit amet
+              lorem ipsum dolor sit amet
+              lorem ipsum dolor sit amet
+            </span>
+        </div>
+      </h1>
+
+      <div class="row-left">
+        <img class="back" src="img/unnamed.png" width="100%">
+      </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="link-container">
+        <h3>
+          2020
+        </h3>
+        <ul class="social-link">
+          <li><a href="https://twitter.com/clt_leo" target="_blank"><h3>TWITTER</h3></a></li>
+          <li><a href="https://www.instagram.com/cltleo/" target="_blank"><h3>INSTAGRAM</h3></a></li>
+          <li><a href="https://dribbble.com/DanHen" target="_blank"><h3>DRIBBLE</h3></a></li>
+          <li><a href="https://www.behance.net/DanHen" target="_blank"><h3>BEHANCE</h3></a></li>
+        </ul>
+      </div>
+      <a>
+        <h3>
+          <div>
+          <span><svg class="arrow-up" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.39 57.39"><path
+                  d="M54.8,35.13A26.44,26.44,0,0,1,47,16.3H43a26.5,26.5,0,0,1-7.87,18.9A26.44,26.44,0,0,1,16.3,43v4A30.51,30.51,0,0,0,38,38a30.71,30.71,0,0,0,5-6.51V73.7h4V31.43A31.23,31.23,0,0,0,52,38,30.43,30.43,0,0,0,73.7,47V43A26.5,26.5,0,0,1,54.8,35.13Z"
+                  transform="translate(-16.3 -16.3)"
+          /></svg>
+        </span>GO UP
+          </div>
+        </h3>
+      </a>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="main.js"></script>
@@ -53,12 +147,8 @@
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.to(".hidden", { delay: 0.2, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1, });
-      gsap.to(".fadeIn", { delay: 0.8, duration: 0.9, ease: "expo.out", opacity: 1, });
-      gsap.to(".arrow-down",{ delay:1.2, duration: 0.9, ease: "expo.out", x:-0, y:0, });
-      gsap.to(".fadeInUp", { delay: 0.6, duration: 0.8, ease: "power4.out", y: 0, opacity: 1, stagger: 0.05,
-        scrollTrigger: ".fadeInUp",});
-      gsap.to(".hidden2", { delay: 0.5, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1,
-        scrollTrigger: ".hidden2"});
+      gsap.to(".fadeIn", { delay: 0.3, duration: 0.8, ease: "power4.out", y: 0, opacity: 1, stagger: 0.05, scrollTrigger: ".fadeIn",});
+      gsap.to(".hidden2", { delay: 0.6, duration: 0.9, ease: "power4.out", opacity: 1, y: 0, stagger: 0.1, scrollTrigger: ".hidden2"});
     </script>
   </body>
 </html>
